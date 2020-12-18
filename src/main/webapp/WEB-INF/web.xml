@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>servletCarrito</servlet-name>
+        <servlet-class>servlets.servletCarrito</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>servletRedirecciona</servlet-name>
+        <servlet-class>servlets.servletRedirecciona</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>servletValidaUsuario</servlet-name>
+        <servlet-class>servlets.servletValidaUsuario</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servletCarrito</servlet-name>
+        <url-pattern>/servletCarrito</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>servletRedirecciona</servlet-name>
+        <url-pattern>/servletRedirecciona</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>servletValidaUsuario</servlet-name>
+        <url-pattern>/servletValidaUsuario</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
